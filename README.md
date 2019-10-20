@@ -16,12 +16,12 @@ Focused on
 
 ## Release APK
 
-Download apk [here](https://bit.ly/35EiY6h)
+Download apk V 1.0.2 [here](https://bit.ly/35EiY6h)
 
-## Bugs ( Need To Fix )
+## ~~Bugs ( Need To Fix )~~ Fixed
 
 `` 
-At search page, first 2 search work well, after that it overwrite with the old data ( I guess it because of LiveData from db )
+~~At search page, first 2 search work well, after that it overwrite with the old data ( I guess it because of LiveData from db )~~
 ``
 ## Dependencies 
 ```java
