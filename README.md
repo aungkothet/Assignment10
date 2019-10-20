@@ -14,6 +14,10 @@ Focused on
 <li>Used BuildConfig to hide the tmdb api key</li>
 </ul>
 
+## Release APK
+
+Download apk [here](https://bit.ly/35EiY6h)
+
 ## Bugs ( Need To Fix )
 
 `` 
@@ -74,15 +78,19 @@ At search page, first 2 search work well, after that it overwrite with the old d
 ```
 ## Reference Image
 
-![Reference](https://github.com/aungkothet/bookstore/blob/master/house_renting_app_ref.jpg)
+![Reference](https://github.com/aungkothet/bookstore/blob/master/assignment10-ref-1.png)
+![Reference](https://github.com/aungkothet/bookstore/blob/master/assignment10-ref-2.png)
+![Reference](https://github.com/aungkothet/bookstore/blob/master/assignment10-ref-3.png)
 
 ## Screenshots 
 
-![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment5_ss_1.png)
-![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment5_ss_2.png)
+![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment10-ss1.png)
+![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment10-ss2.png)
+![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment10-ss3.png)
+![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment10-ss4.png)
+![Screenshot](https://github.com/aungkothet/bookstore/blob/master/assignment10-ss5.png)
 
-## Release APK
-Download apk [here](https://github.com/aungkothet/Assignment10/blob/master/app/release/Assignment10.apk)
+
 
 
 
