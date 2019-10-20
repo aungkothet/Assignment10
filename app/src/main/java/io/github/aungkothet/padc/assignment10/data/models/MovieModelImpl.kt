@@ -5,7 +5,7 @@ import androidx.lifecycle.Transformations
 import io.github.aungkothet.padc.assignment10.data.vos.*
 
 object MovieModelImpl : BaseModel(), MovieModel {
-    override fun searchMoviesByName(movieName: String): LiveData<List<MovieVo>> {
+    override fun searchMoviesByName(movieName: String):List<MovieVo> {
         return dataBase.movieDao().searchMoviesByName("%$movieName%")
     }
 
@@ -30,7 +30,6 @@ object MovieModelImpl : BaseModel(), MovieModel {
     }
 
     override fun getNowPlayingMovies(): LiveData<List<NowPlayingMovieVo>> {
-        dataBase.movieDao().getNowPlayingMovies()
         return Transformations.distinctUntilChanged(dataBase.movieDao().getNowPlayingMovies())
     }
 

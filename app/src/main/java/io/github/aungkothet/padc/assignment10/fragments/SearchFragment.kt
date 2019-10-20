@@ -51,12 +51,11 @@ class SearchFragment : Fragment() {
         }
         view.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                mPresenter.onSearchButtonClicked(query, activity as BaseActivity)
+                mPresenter.onSearchButtonClicked(query)
                 return false
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                println("QUERYTEXT {$newText}")
                 if(newText.isNullOrEmpty()){
                     searchResultMoviesRecyclerAdapter.data.clear()
                     searchResultMoviesRecyclerAdapter.notifyDataSetChanged()

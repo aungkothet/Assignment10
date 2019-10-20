@@ -10,15 +10,15 @@ data class MovieVo(
 
     @SerializedName("popularity")
     @ColumnInfo(name = "popularity")
-    val popularity: Double,
+    val popularity: Double?,
 
     @SerializedName("vote_count")
     @ColumnInfo(name = "vote_count")
-    val voteCount: Int,
+    val voteCount: Int?,
 
     @SerializedName("video")
     @ColumnInfo(name = "video")
-    val video: Boolean,
+    val video: Boolean?,
 
     @SerializedName("poster_path")
     @ColumnInfo(name = "poster_path")
@@ -31,7 +31,7 @@ data class MovieVo(
 
     @SerializedName("adult")
     @ColumnInfo(name = "adult")
-    val adult: Boolean,
+    val adult: Boolean?,
 
     @SerializedName("backdrop_path")
     @ColumnInfo(name = "backdrop_path")
@@ -39,11 +39,11 @@ data class MovieVo(
 
     @SerializedName("original_language")
     @ColumnInfo(name = "original_language")
-    val originalLanguage: String,
+    val originalLanguage: String?,
 
     @SerializedName("original_title")
     @ColumnInfo(name = "original_title")
-    val originalTitle: String,
+    val originalTitle: String?,
 
     @SerializedName("genre_ids")
     @ColumnInfo(name = "genre_ids")
@@ -51,17 +51,17 @@ data class MovieVo(
 
     @SerializedName("title")
     @ColumnInfo(name = "title")
-    val title: String,
+    val title: String?,
 
     @SerializedName("vote_average")
     @ColumnInfo(name = "vote_average")
-    val voteAverage: Double,
+    val voteAverage: Double?,
 
     @SerializedName("overview")
     @ColumnInfo(name = "overview")
-    val overview: String,
+    val overview: String?,
 
     @SerializedName("release_date")
     @ColumnInfo(name = "release_date")
-    val releaseDate: String
+    val releaseDate: String?
 )

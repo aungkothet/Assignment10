@@ -12,7 +12,7 @@ interface MovieModel {
     fun getNowPlayingMovies(): LiveData<List<NowPlayingMovieVo>>
 
     fun getMovieById(id: Int): MovieVo
-    fun searchMoviesByName(movieName: String): LiveData<List<MovieVo>>
+    fun searchMoviesByName(movieName: String): List<MovieVo>
 
 
 }

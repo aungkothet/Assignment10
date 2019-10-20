@@ -13,7 +13,7 @@ import io.github.aungkothet.padc.assignment10.utils.DB_NAME
 @Database(
     entities = [NowPlayingMovieVo::class, PopularMoviesVo::class, SimilarMoviesVo::class,
         TopRatedMoviesVo::class, UpComingMoviesVo::class,MovieVo::class],
-    version = 8,
+    version = 9,
     exportSchema = false
 )
 @TypeConverters(GenreListTypeConverter::class)

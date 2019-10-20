@@ -44,7 +44,7 @@ abstract class MovieDao {
     abstract fun getSimilarMovies(movieId: Int): LiveData<List<SimilarMoviesVo>>
 
     @Query("SELECT * FROM movies WHERE title LIKE :movieName AND poster_path IS NOT NULL")
-    abstract fun searchMoviesByName(movieName: String): LiveData<List<MovieVo>>
+    abstract fun searchMoviesByName(movieName: String): List<MovieVo>
 
     @Query("SELECT * FROM movies WHERE id=:id")
     abstract fun getMovieById(id: Int): MovieVo

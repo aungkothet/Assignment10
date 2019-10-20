@@ -60,26 +60,27 @@ class MainPresenter : BasePresenter<MainView>(), MovieDelegate {
         })
     }
 
-    fun onSearchButtonClicked(movieName: String,activity: BaseActivity){
+    fun onSearchButtonClicked(movieName: String){
 
         RetrofitAgent.searchMovies(movieName,1,{
-            println("${it.size} item got from nw $movieName")
             if(it.isNotEmpty()){
                 DataBaseHelper.movieDataBase.movieDao().insertMovies(it)
-            }else {
-                mView.showResultMovieList(it)
+            }
+            val list =  MovieModelImpl.searchMoviesByName(movieName)
+            if (list.isNotEmpty()) {
+                mView.showResultMovieList(list)
+            }else{
                 mView.showErrorMessage("Sorry! No Movies Found! @_@")
             }
         },{
             mView.showErrorMessage(it)
-        })
-        MovieModelImpl.searchMoviesByName(movieName).observe(activity, Observer {list->
-            println("${list.size} item got from db $movieName")
+            val list =  MovieModelImpl.searchMoviesByName(movieName)
             if (list.isNotEmpty()) {
                 mView.showResultMovieList(list)
+            }else{
+                mView.showErrorMessage("Sorry! No Movies Found! @_@")
             }
         })
-
     }
 
     override fun onItemClicked(movieId: Int) {
